@@ -1,0 +1,63 @@
+{
+  "id": "586b5edf-bc86-43f5-94a4-0807c93ff9f6",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.quiz": {
+      "name": "quiz",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "quizName": {
+          "name": "quizName",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quizMarks": {
+          "name": "quizMarks",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quizSubject": {
+          "name": "quizSubject",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "quizCreated": {
+          "name": "quizCreated",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
